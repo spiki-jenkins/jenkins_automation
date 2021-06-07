@@ -35,6 +35,7 @@ def get_sentiment():
             label = {0:'negative', 1:'positive'}
             prediction = clf.predict(X)[0]
             confidence_score = np.max(clf.predict_proba(X))*100
+            # just added test comment
             status_code = 200
             return_data={
                 "error": "0",
